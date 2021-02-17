@@ -9,10 +9,14 @@ import Foundation
 
 class Cards : CustomStringConvertible{
     
-    public var cards  = [Card]()
+    public var cards :[Card]
     
     var description: String {
         return cards.description
+    }
+    
+    init(){
+        cards = [Card]()
     }
     
     @discardableResult
