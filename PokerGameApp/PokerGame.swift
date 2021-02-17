@@ -14,7 +14,7 @@ class PokerGame {
     var dealer : Dealer
     
     init(){
-        self.players = Players(total: countOfPlayer)
+        self.players = Players(with: countOfPlayer)
         self.dealer = Dealer()
     }
     
