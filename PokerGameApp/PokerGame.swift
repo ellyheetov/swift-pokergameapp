@@ -21,6 +21,7 @@ class PokerGame {
     private func gameReset(){
         players.removeAllCards()
         dealer.removeAllCards()
+        dealer.resetDeck()
     }
 
     public func start(){
@@ -28,7 +29,7 @@ class PokerGame {
         printRule()
         
         dealer.shuffleCards()
-        dealer.spreadCardsToPlayer(players : &players)
+        dealer.spreadCardsToPlayer(players : players)
         dealer.spreadCardsToDealer()
         
         printResult()
